@@ -10,7 +10,7 @@ export async function up(queryInterface, Sequelize) {
       type: Sequelize.INTEGER,
       allowNull: false,
       references: {
-        model: 'User',
+        model: 'users',
         key: 'id'
       },
       onDelete: 'CASCADE'
@@ -19,7 +19,7 @@ export async function up(queryInterface, Sequelize) {
       type: Sequelize.INTEGER,
       allowNull: false,
       references: {
-        model: 'Joke',
+        model: 'jokes',
         key: 'id'
       },
       onDelete: 'CASCADE'
