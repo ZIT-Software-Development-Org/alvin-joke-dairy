@@ -14,7 +14,7 @@ export default defineConfig({
   strictPort: true,
   proxy:{
     "/api": {
-      target: "http://localhost:5000",
+      target: "https://alvin-joke-dairy.onrender.com/",
       changeOrigin: true,
       secure: false
     }
