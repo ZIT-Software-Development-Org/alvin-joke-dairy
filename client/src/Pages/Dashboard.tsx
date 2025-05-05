@@ -298,7 +298,7 @@ const Dashboard: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Navigation */}
-      <nav className="bg-white shadow-lg">
+      <nav className="md:px-28 py-4 px-2 fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-16">
             <div className="flex">
@@ -373,7 +373,7 @@ const Dashboard: React.FC = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-3xl mx-auto px-2 sm:px-6 lg:px-28 py-8 mt-24">
         {/* Tabs */}
         <div className="flex space-x-4 mb-6 overflow-x-auto">
           <button
@@ -468,7 +468,7 @@ const Dashboard: React.FC = () => {
           <div className="space-y-6">
             {jokes.map((joke) => (
               <React.Fragment key={joke.id}>
-                <div className="bg-white rounded-lg shadow-md p-6 transition-transform hover:scale-[1.01]">
+                <div className="bg-teal-20 rounded-lg shadow-md p-6 transition-transform hover:scale-[1.01]">
                   <div className="flex items-start justify-between">
                     <div className="w-full">
                       {editJokeId === joke.id ? (
